@@ -10,8 +10,8 @@ const SideMenu = (): JSX.Element => {
         style={({ isActive }) => (isActive ? styles.activeLink : styles.link)}
       >
        <span className="material-icons" style={styles.icon}>
-    home
-  </span>
+            home
+        </span>
   <p style={styles.text}>Home</p>
       </NavLink>
       <NavLink
