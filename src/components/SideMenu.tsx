@@ -12,18 +12,24 @@ const SideMenu = (): JSX.Element => {
        <span className="material-icons" style={styles.icon}>
             home
         </span>
-  <p style={styles.text}>Home</p>
+        <p style={styles.text}>Home</p>
       </NavLink>
       <NavLink
         to="/task-list"
         style={({ isActive }) => (isActive ? styles.activeLink : styles.link)}
       >
+        <span className="material-icons" style={styles.icon}>
+            list
+        </span>
         <p style={styles.text}>Task List</p>
       </NavLink>
       <NavLink
         to="/task-progress"
         style={({ isActive }) => (isActive ? styles.activeLink : styles.link)}
       >
+       <span className="material-icons" style={styles.icon}>
+            check_box
+        </span>
         <p style={styles.text}>Task Progress</p>
       </NavLink>
     </div>
